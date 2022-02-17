@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Trade Gauge</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Gauge those trades</h1>
+            <h2>Welcome to the investment evaluation station where nothing is financial advice <span class="headerSpan">(or any advice at all)</span></h2>
+        </header>
+
+        <main>
+            <article>
+                <div class="article1">
+                    <h3>What is this?</h3>
+                </div>
+
+                <div class="article2">
+                    <p class="definition">This is a crude <a href="https://www.dailyfx.com/education/trading-discipline/what-is-fomo-in-trading.html" target ="_blank" onclick="newTab()">FOMO</a> prevention tool.</p>
+                </div>
+
+                <div class="article3">
+                    <h3>But why?</h3>
+                </div>
+
+                <div class="article4">
+                    <p>You may have overheard a coworker being able to afford the downpayment for their dream home by cashing out their Tesla stocks. Or perhaps you stumbled upon an influencer peddling the latest crypto tokens with a promise to <span class="italicText">"moon"</span>. Being exposed to so much positive news about capital gain could make your self-investing senses tingling. Next thing you know, you are ready to put your hard earned money to work for you by setting up a self-direct trading account.</p><br>
+                    <p class="italicText">Use the form below to see if the risk is worth the reward.</p>
+                </div>
+
+                <div class="article5">
+                    <h3>The assumptions:</h3>
+                </div>
+
+                <div class="article6">
+                    <p>The bigger your order size is, the higher your risk will become</p>
+                    <p>The higher your expected return is, the longer your market exposure becomes (and in turn, the higher risk you take)</p>
+                </div>
+            </article>
+
+            <form action="#" class="inputForm">
+                <div class="formWrapper">
+                <div class="input1">
+                    <label for="porfVal">Porfolio Size</label><br>
+                    <input type="number" id="porfVal" name="porfVal" placeholder="The size of your investment porfolio in USD"><br>
+                </div>
+                <div class="input2">
+                    <label for="tradeSize">Buy-Order Size</label><br>
+                    <input type="number" id="tradeSize" name="tradeSize" placeholder="The size of your buy-order in USD"><br>
+                </div>
+                <div class="input3">
+                    <label for="porfVal">Buy-In Price</label><br>
+                    <input type="number" id="buyPrice" name="buyPrice" placeholder="The price of your favourite stock in USD"><br>
+                </div>
+                <div class="input4">
+                    <label for="porfVal">Take-Profit Price</label><br>
+                    <input type="number" id="profitPrice" name="profitPrice" placeholder="The price you expect your stock to hit in USD"><br>
+                </div>
+                </div>
+                <input type="submit" value="Submit">
+            </form>       
+        </main>
+    </div>
+</body>
+</html>
